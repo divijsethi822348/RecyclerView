@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp" android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="230dp"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/pp1"
+            android:id="@+id/nav_pic"/>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/colorAccent"
+           android:layout_below="@+id/nav_pic"
+           android:id="@+id/view1"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:text="  Home"
+            android:drawableLeft="@drawable/home"
+            android:id="@+id/home"
+            android:textSize="20dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_below="@id/home"
+            android:id="@+id/view2"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:text="  Settings"
+            android:drawableLeft="@drawable/settings"
+            android:id="@+id/settings"
+            android:textSize="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_below="@+id/settings"
+            android:id="@+id/view3"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view3"
+            android:text="  Logout"
+            android:drawableLeft="@drawable/logout"
+            android:textSize="20dp"
+            android:id="@+id/logout"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_below="@+id/logout"
+            android:id="@+id/view4"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.NavigationView>

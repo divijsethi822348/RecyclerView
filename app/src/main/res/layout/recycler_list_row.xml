@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/pp1"
+                android:layout_marginBottom="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/pp"
+                android:text="Jennifer"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="325dp"
+                android:layout_below="@+id/pp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/like"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/image"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/like" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/comment"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/image"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/like"
+                android:src="@drawable/comment" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/share"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/image"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/comment"
+                android:src="@drawable/share" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/options"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/options" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/bookmark"
+                android:layout_below="@+id/image"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/bookmark"/>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+</RelativeLayout>
